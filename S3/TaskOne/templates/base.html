@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles.css" />
+    <title>{% block title %}Магазин одежды{% endblock %}</title>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li><a href="/clothes/">Одежда</a></li>
+        <li><a href="/shoes/">Обувь</a></li>
+        <li><a href="/accessories/">Аксессуары</a></li>
+      </ul>
+    </div>
+
+    {% block content %}
+    <h1>Стартовая страница магазина</h1>
+    {% endblock %}
+  </body>
+</html>
